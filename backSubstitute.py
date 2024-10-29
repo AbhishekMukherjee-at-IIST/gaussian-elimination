@@ -10,7 +10,7 @@ def backSubstitute(matrix: np.ndarray):
         sum = 0
         for j in range(i + 1, n):
             sum += matrix[i, j] * solution[j]
-        solution[i] = (matrix[i][-1] - sum)/(matrix[i][i])
+        solution[i] = (matrix[i, -1] - sum)/(matrix[i, i])
 
     return solution
 
