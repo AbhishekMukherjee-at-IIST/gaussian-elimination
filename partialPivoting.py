@@ -5,7 +5,7 @@ def partialPivot(matrix: np.ndarray):
     [m, n] = matrix.shape
 
     for i in range(0, m):
-        maxValRow = matrix[i:m+1, i].argmax() + i
+        maxValRow = matrix[i : m, i].argmax() + i
         if not(i == maxValRow):
             for col in range(0, n):
                 matrix[i, col], matrix[maxValRow, col] = matrix[maxValRow, col], matrix[i, col]

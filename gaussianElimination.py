@@ -57,8 +57,10 @@ def gaussElimination(matrix):
     return solution
 
 test1 = {
-    "matrix": np.array([[6, -8, -2, 6],[4, 0, -1, 10],[-1, 3, 0, 0]]),
-    "solution": [3, 1, 2] 
+    "matrix": np.array([[0, 2, 1, 5],
+                 [1, -1, 1, 2],
+                 [3, 1, -2, 1]]),
+    "solution": [1, 1, 2] 
 }
 
 test2 = {
