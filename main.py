@@ -1,7 +1,4 @@
-from noPivoting import noPivot
-from partialPivoting import partialPivot
-from fullPivoting import fullPivot
-from backSubstitute import backSubstitute
+from gaussianElimination import *
 import numpy as np
 
 mat1 = np.array([[4, 0, -1, 10],
